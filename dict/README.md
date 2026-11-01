@@ -15,16 +15,16 @@
 
 **来源**：GeoNames Postal Codes · US — <https://download.geonames.org/export/zip/US.zip>
 许可 **CC BY 4.0**，署名 **GeoNames**（<https://www.geonames.org/>）。
-生成时间：2026-10-12 10:42:39（UTC 由运行环境决定）
-原始表行数：41,490｜聚合后邮编：41,488｜涉及州：53
-`zip_city.tsv` sha256 前 16 位：`6a5da9b1b74c5e0e`
+生成时间：2026-11-01 11:03:38（UTC 由运行环境决定）
+原始表行数：0｜聚合后邮编：0｜涉及州：0
+`zip_city.tsv` sha256 前 16 位：`0b2d8e4336ae6e18`
 
 **已知局限（必须如实告知，不许假装权威）**
 - 地名来自 GeoNames 的 **place name**，**不是 USPS 官方 preferred city name**；
   两者在部分小城镇写法不一致 → 因此补出的 city 一律带 `_src=zip_map` 标记。
 - 一个邮编跨县是真实存在的（本表 0 个邮编跨县）→ 取出现最多的那个县。
-- 同一邮编对应多个地名（2 个）→ 取出现最多的那个。
-- 缺地名 0 个邮编、缺 FIPS 509 个邮编 → 落空即不补（绝不编）。
+- 同一邮编对应多个地名（0 个）→ 取出现最多的那个。
+- 缺地名 0 个邮编、缺 FIPS 0 个邮编 → 落空即不补（绝不编）。
 - 该表只用于**补齐空缺**，永远不会覆盖源里真实采到的值。
 
 **刷新**：`python scripts/build_zip_dict.py`（联网重生成）；`.github/workflows/dict-refresh.yml`
